@@ -143,3 +143,14 @@ h3 {
   color: green;
   font-size: 28px;
 }
+
+h2 {
+  font-family: 'Julius Sans One';
+  color: purple;
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+p {
+  line-height: 23px;
+}

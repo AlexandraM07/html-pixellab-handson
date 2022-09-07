@@ -23,3 +23,28 @@
   border-radius: 50%;
   margin-left: 8px;
 }
+
+.my-second-list a {
+  display: block;
+  margin: 8px 0;
+}
+
+.my-second-list a::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.my-second-list a::after {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  transform: rotate(45deg);
+  margin-left: 8px;
+}

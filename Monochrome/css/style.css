@@ -1,4 +1,3 @@
-/* fonts */
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
@@ -214,8 +213,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-/* fonts */
 
 body {
   font-family: 'Playfair Display', serif;

@@ -29,7 +29,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container">
 
     <section class="header-secondary">
       <div class="header-connect">
@@ -77,40 +77,30 @@
             >Call us +44 (0)10 2345 6789
             </a>
           </li>
-
-          <li>
-            <a
-              href="/"
-              title="monochrome"
-              class="header-banner"
-            >
-              <img
-                src="./images/banner.png"
-                alt="Monochrome - banner"
-              >
-            </a>
-          </li>
         </ul>
 
       </div>
 
       <div class="header-controls">
-        <form action="/">
-          <input
-            type="text"
-            name="Search"
-            id="Search"
-            placeholder="Search"
-          >
-        </form>
-
         <ul>
+          <li>
+            <form action="/">
+              <input
+                type="text"
+                name="Search"
+                id="Search"
+                placeholder="Search"
+              >
+            </form>
+          </li>
+
+
           <li>
             <a
               href="/"
               title="User"
             >
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user icon"></i>
             </a>
           </li>
 
@@ -188,7 +178,7 @@
   <!-- ./header -->
 
 
-  <main class="content">
+  <main class="content container">
 
     <div class="content-main">
 
@@ -737,7 +727,7 @@
   </main>
   <!-- ./content -->
 
-  <footer class="footer">
+  <footer class="footer container">
     <section class="footer-contact">
       <nav class="footer-nav">
         <ul>
@@ -745,7 +735,7 @@
             <a
               href="tel:+44 (0)10 2345 6789"
               title="CALL US +44 (0)10 2345 6789"
-            >CALL US +44 (0)10 2345 6789
+            >call us <br> +44 (0)10 2345 6789
             </a>
           </li>
 
@@ -757,11 +747,8 @@
             </a>
           </li>
         </ul>
-      </nav>
 
 
-
-      <nav class="footer-nav">
         <ul>
           <li>
             <a
@@ -833,82 +820,92 @@
       <!-- ./footer-nav -->
 
       <div class="footer-connect">
-        <h1>sign up for our newsletter</h1>
-        <form
-          class="footer-newsletter"
-          action="/"
-        >
-          <input
-            type="email"
-            name="email"
-            id="email"
-          >
-        </form>
 
-        <label for="Agreement">I agree with Privacy Policy and i want to receive emails from Monochrome</label>
-        <input
-          type="checkbox"
-          name="Agreement"
-          id="Agreement"
-        >
-
-        <button
-          type="submit"
-          title="Submit"
-        >Submit</button>
-        <!-- ./footer-newsletter -->
-
-
-        <section class="footer-social">
-          <ul>
-            <li>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                title="Youtube"
-                rel="noopener noreferrer"
+        <ul>
+          <li>
+            <h1>sign up for our newsletter</h1>
+            <form
+              class="footer-newsletter"
+              action="/"
+            >
+              <input
+                type="email"
+                name="email"
+                id="email"
               >
-                <i class="fa-brands fa-square-youtube"></i>
-              </a>
-            </li>
+            </form>
+          </li>
 
-            <li>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                title="Twitter"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
+          <li>
+            <label for="Agreement">I agree with Privacy Policy and i want to receive emails from Monochrome</label>
+            <input
+              type="checkbox"
+              name="Agreement"
+              id="Agreement"
+            >
+          </li>
 
-            <li>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                title="Facebook"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                title="Instagram"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <!-- ./footer-social -->
-
+          <li>
+            <button
+              type="submit"
+              title="Submit"
+            >Submit</button>
+          </li>
+        </ul>
       </div>
+      <!-- ./footer-connect -->
+
+
+      <section class="footer-social">
+        <ul>
+          <li>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              title="Youtube"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-square-youtube"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              title="Twitter"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              title="Facebook"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              title="Instagram"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ./footer-social -->
+
+
       <!-- footer-connect -->
     </section>
   </footer>

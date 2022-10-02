@@ -29,103 +29,110 @@
 </head>
 
 <body>
-  <header class="header container">
+  <header class="header">
 
     <section class="header-secondary">
-      <div class="header-connect">
-        <ul>
-          <li>
-            <a
-              href=""
-              title="Youtube"
-            >
-              <i class="fa-brands fa-square-youtube"></i>
-            </a>
-          </li>
 
-          <li>
-            <a
-              href=""
-              title="Facebook"
-            >
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href=""
-              title="Twitter"
-            >
-              <i class="fa-brands fa-square-twitter"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href=""
-              title="Instagram"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="tel:+44 (0)10 2345 6789"
-              title="Call us"
-            >Call us +44 (0)10 2345 6789
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-      <div class="header-controls">
-        <ul>
-          <li>
-            <form action="/">
-              <input
-                type="text"
-                name="Search"
-                id="Search"
-                placeholder="Search"
+      <section class="header-secondary-inner container">
+        <div class="header-connect">
+          <ul>
+            <li>
+              <a
+                href=""
+                title="Youtube"
               >
-            </form>
-          </li>
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
+            </li>
 
+            <li>
+              <a
+                href=""
+                title="Facebook"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="/"
-              title="User"
+            <li>
+              <a
+                href=""
+                title="Twitter"
+              >
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href=""
+                title="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="tel:+44 (0)10 2345 6789"
+                title="Call us"
+              >Call us +44 (0)10 2345 6789
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="header-controls">
+          <form
+            action="/"
+            class="header-search"
+          >
+
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input
+              type="text"
+              name="Search"
+              id="Search"
+              placeholder="Search"
             >
-              <i class="fa-solid fa-user icon"></i>
-            </a>
-          </li>
+          </form>
 
-          <li>
-            <a
-              href="/"
-              title="Favourite"
-            >
-              <i class="fa-solid fa-heart"></i>
-            </a>
-          </li>
 
-          <li>
-            <a
-              href="/"
-              title="Bag"
-            >
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul>
+            <li>
+              <a
+                href="/"
+                title="User"
+              >
+                <i class="fa-solid fa-user icon"></i>
+              </a>
+            </li>
 
+            <li>
+              <a
+                href="/"
+                title="Favourite"
+              >
+                <i class="fa-solid fa-heart"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/"
+                title="Bag"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ./header-secondary -->
     </section>
-    <!-- ./header-secondary -->
 
     <section class="header-primary">
       <ul>
@@ -173,22 +180,21 @@
       </ul>
     </section>
     <!-- ./header-primary -->
-
   </header>
   <!-- ./header -->
 
 
-  <main class="content container">
+  <main class="content">
+    <section class="home-catalog-preview container">
 
-    <div class="content-main">
+      <header>
+        <h1>New Stuff</h1>
+      </header>
 
-      <section class="home-catalog-preview">
-
-        <header>New Stuff</header>
-
-        <ul class="product-tiles">
-          <li>
-            <article class="product-tile">
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -211,12 +217,18 @@
                   title="Monochrome"
                 >Monochrome</a>
               </h1>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -233,18 +245,24 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -267,12 +285,62 @@
                   title="Monochrome"
                 >Monochrome</a>
               </h1>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
+              <div class="product-tile-image">
+                <a
+                  href=""
+                  title="Monochrome"
+                >
+                  <img
+                    src="./images/ceas alb patrat.png"
+                    alt="Monochrome"
+                  >
+                </a>
+
+                <span class="product-tile-badge">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+              </div>
+
+              <h2 class="product-tile-title">
+                <a
+                  href=""
+                  title="Monochrome"
+                >Monochrome</a>
+              </h2>
+            </header>
+
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="home-catalog-preview container">
+
+      <header>
+        <h1>Most loved</h1>
+      </header>
+
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -295,52 +363,18 @@
                   title="Monochrome"
                 >Monochrome</a>
               </h1>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
-            </article>
-          </li>
-        </ul>
-      </section>
-
-      <section class="home-catalog-preview">
-
-        <header>Most Loved</header>
-
-        <ul class="product-tiles">
-          <li>
-            <article class="product-tile">
-              <div class="product-tile-image">
-                <a
-                  href=""
-                  title="Monochrome"
-                >
-                  <img
-                    src="./images/ceas alb patrat.png"
-                    alt="Monochrome"
-                  >
-                </a>
-
-                <span class="product-tile-badge">
-                  <i class="fa-regular fa-heart"></i>
-                </span>
-              </div>
-
-              <h1 class="product-tile-title">
-                <a
-                  href=""
-                  title="Monochrome"
-                >Monochrome</a>
-              </h1>
-
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
-
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -357,18 +391,24 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -385,18 +425,24 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -413,54 +459,62 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
-            </article>
-          </li>
-        </ul>
-      </section>
+        <!-- inlocuieste poze si badge -->
+      </ul>
+    </section>
 
-      <section class="home-content">
-        <aside class="home-content">
-          <a
-            href=""
-            title="Monochrome"
+
+    <div class="home-content">
+      <aside>
+        <a
+          href=""
+          title="Monochrome"
+        >
+          <img
+            src="./images/image aside.png"
+            alt="Monochrome"
           >
-            <img
-              src="./images/image aside.png"
-              alt="Monochrome"
-            >
-          </a>
-        </aside>
-      </section>
+        </a>
+      </aside>
 
-      <section class="home-content">
+      <section>
         <h1>Watches for entrepreneurs</h1>
         <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
           will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-          truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.
+          truth, the master-builder of human happiness. No
+        </p>
+
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+          will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+          truth, the master-builder of human happiness. No
         </p>
       </section>
+    </div>
 
-      <section class="home-catalog-preview">
+    <section class="home-catalog-preview container">
+      <header>
+        <h1>Men's</h1>
+      </header>
 
-        <header class="home-catalog-preview">
-          <h1>Men's</h1>
-        </header>
-
-        <ul class="product-tiles">
-          <li>
-            <article class="product-tile">
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -477,18 +531,24 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -505,18 +565,24 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -533,18 +599,24 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -559,43 +631,47 @@
                 <span class="product-tile-badge">
                   <i class="fa-regular fa-heart"></i>
                 </span>
-
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-                <a
-                  href=""
-                  title="View more"
-                >
-                  <button
-                    type="submit"
-                    title="View More"
-                  >View All
-                  </button>
-                </a>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
-            </article>
-          </li>
-        </ul>
-      </section>
+        <!-- inlocuieste poze si badge -->
+      </ul>
 
-      <section class="home-catalog-preview">
+      <footer class="catalog-ctas">
+        <a href=" ">
+          <button
+            type="submit"
+            title="View More"
+          >View All
+          </button>
+        </a>
+      </footer>
+    </section>
 
-        <header>Women's</header>
+    <section class="home-catalog-preview container">
 
-        <ul class="product-tiles">
-          <li>
-            <article class="product-tile">
+      <header>
+        <h1>Women's</h1>
+      </header>
+
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -612,18 +688,24 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -640,18 +722,24 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -674,12 +762,18 @@
                   title="Monochrome"
                 >Monochrome</a>
               </h1>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
 
+        <li>
+          <article class="product-tile">
+            <header>
               <div class="product-tile-image">
                 <a
                   href=""
@@ -696,40 +790,39 @@
                 </span>
               </div>
 
-              <h1 class="product-tile-title">
+              <h2 class="product-tile-title">
                 <a
                   href=""
                   title="Monochrome"
                 >Monochrome</a>
-              </h1>
+              </h2>
+            </header>
 
-              <section class="product-tile-pricing">
-                <span>$425</span>
-                <a
-                  href=""
-                  title="View more"
-                >
-                  <button
-                    type="submit"
-                    title="View More"
-                  >View All
-                  </button>
-                </a>
-              </section>
-              <!-- product-tile-pricing -->
+            <section class="product-tile-pricing">
+              <span>$425</span>
+            </section>
+            <!-- product-tile-pricing -->
+          </article>
+        </li>
+      </ul>
 
-            </article>
-          </li>
-        </ul>
-      </section>
+      <footer class="catalog-ctas">
+        <a href=" ">
+          <button
+            type="submit"
+            title="View More"
+          >View All
+          </button>
+        </a>
+      </footer>
 
-    </div>
+    </section>
   </main>
   <!-- ./content -->
 
   <footer class="footer">
-    <section class="footer-inner">
-      <nav class="footer-nav">
+    <section class="footer-inner container">
+      <section class="footer-contact">
         <ul>
           <li>
             <a
@@ -747,8 +840,9 @@
             </a>
           </li>
         </ul>
+      </section>
 
-
+      <nav class="footer-nav">
         <ul>
           <li>
             <a
@@ -816,94 +910,84 @@
             </a>
           </li>
         </ul>
-
-
-
-        <ul>
-          <li>
-            <h1>sign up for our newsletter</h1>
-            <form
-              class="footer-newsletter"
-              action="/"
-            >
-              <input
-                type="email"
-                name="email"
-                id="email"
-              >
-            </form>
-          </li>
-
-          <li>
-            <label for="Agreement">I agree with Privacy Policy and i want to receive emails from Monochrome</label>
-            <input
-              type="checkbox"
-              name="Agreement"
-              id="Agreement"
-            >
-          </li>
-
-          <li>
-            <button
-              type="submit"
-              title="Submit"
-            >Submit</button>
-          </li>
-          <li>
-            <ul class="footer-social">
-              <li>
-                <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  title="Youtube"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-square-youtube"></i>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  title="Twitter"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  title="Facebook"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  title="Instagram"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-
       </nav>
 
-    </section>
+      <section class="footer-connect">
+        <form
+          action="/"
+          class="footer-newsletter"
+        >
+          <label for="email">sign up for our newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email address"
+          >
 
-    <!-- footer-inner -->
+          <label for="Agreement">I agree with Privacy Policy and i want to receive emails from Monochrome</label>
+          <input
+            type="checkbox"
+            name="Agreement"
+            id="Agreement"
+          >
+
+          <button
+            type="submit"
+            title="Submit"
+          >Submit</button>
+        </form>
+
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                title="Youtube"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                title="Twitter"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                title="Facebook"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                title="Instagram"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- footer-inner -->
     </section>
   </footer>
   <!-- ./footer -->

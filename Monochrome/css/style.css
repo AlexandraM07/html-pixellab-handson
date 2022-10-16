@@ -342,6 +342,10 @@ table {
 
 /* reset */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Playfair Display', serif;
 }
@@ -352,9 +356,9 @@ a {
 }
 
 .container {
-  max-width: 1334px;
+  max-width: 1356px;
   margin: 0 auto;
-  width: 1920px;
+  width: 100%;
 }
 
 /* header */
@@ -379,7 +383,7 @@ a {
 .header-secondary-inner {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 50px 125px;
 }
 
 .header-secondary-inner .header-connect ul {
@@ -411,6 +415,17 @@ a {
   border: 1px solid black;
 }
 
+.header-search button,
+.header-search input {
+  background: none;
+  border: none;
+}
+
+.header-search input::placeholder {
+  color: #2b2b2b;
+  font-size: 14px;
+}
+
 .header-secondary {
   background: #1b1927 url(../images/banner.png) center center / cover no-repeat;
   font-size: 16px;
@@ -420,12 +435,9 @@ a {
   height: 500px;
 }
 
-.header-secondary-inner {
-  padding-top: 50px;
-}
-
 .product-tile-image {
   position: relative;
+  width: 100%;
 }
 
 .product-tile-badge {
@@ -471,31 +483,38 @@ a {
 }
 
 .footer-inner {
-  padding: 100px;
-  font-size: 22px;
+  padding: 35px;
+  font-size: 22px !important;
   color: #2b2b2b;
   line-height: 20px;
   text-align: left;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 176px;
-  margin-right: 60px;
+  justify-content: space-between;
+  width: 30.7522124%;
 }
+/* 417 * 100 / 1356 =  30.7522124*/
 
-.footer-nav ul:last-child {
-  margin-left: 160px;
+.footer-contact {
+  width: 15.7817109%;
 }
+/* 214 * 100 / 1356 = 15.7817109 */
+
+.footer-connect {
+  width: 26.5486726%;
+}
+/* 360 * 100 / 1356 = 26.5486726 */
 
 .footer-nav ul li,
 .footer-contact li {
-  margin: 15px;
+  margin: 15px 0px;
 }
 
 .footer-nav ul li:first-child,
@@ -509,8 +528,7 @@ a {
 }
 
 .footer-newsletter .input-container {
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin: 15px 0px;
 }
 
 .footer-newsletter .privacy-container {
@@ -524,6 +542,7 @@ a {
 
 .privacy-container {
   margin-bottom: 15px;
+  font-size: 15px;
 }
 
 .footer-newsletter button {
@@ -555,7 +574,9 @@ a {
 
 .product-tiles li {
   margin-right: 24px;
+  width: 23.6725664%;
 }
+/* 321 * 100 / 1356 = 23.6725664  */
 
 .catalog-ctas a {
   text-align: center;
@@ -568,6 +589,8 @@ a {
   text-align: center;
   font-size: 35px;
   margin: 41px 0;
+  padding-top: 10px;
+  border-top: 1px solid #cccccc;
 }
 
 .product-tile-pricing {
